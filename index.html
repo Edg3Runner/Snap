@@ -9,62 +9,80 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <img
-          src="./assets/images/snap.svg"
-          alt="Snap"
-          height="26.58"
-          width="83.5"
-        />
-      </div>
-      <nav class="header nav">
-        <ul nav__list>
-          <li class="nav__item"><a href="#">Feature</a></li>
-          <li class="nav__item"><a href="#">Company</a></li>
-          <li class="nav__item"><a href="#">Careers</a></li>
-          <li class="nav__item"><a href="#">About</a></li>
-        </ul>
-        <section class="auth">
-          <form class="auth__form--login">
-            <button class="button">Login</button>
-          </form>
-          <form class="auth__form--register">
-            <button class="button">Register</button>
-          </form>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo">
+          <img
+            src="./assets/images/logo.svg"
+            alt="Snap"
+            height="26.58"
+            width="83.5"
+          />
+        </div>
+        <nav class="header nav">
+          <!-- <ul nav__list>
+            <li class="nav__item"><a href="#">Feature</a></li>
+            <li class="nav__item"><a href="#">Company</a></li>
+            <li class="nav__item"><a href="#">Careers</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+          </ul> -->
+          <section class="auth">
+            <form class="auth__form--login">
+              <button class="button">Login</button>
+            </form>
+            <form class="auth__form--register">
+              <button class="button">Register</button>
+            </form>
+          </section>
+        </nav>
+      </header>
+      <main class="cta">
+        <h1 class="cta--primary">Make remote work</h1>
+        <p class="cta--secondary">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a class="cta__link" href="#">Learn more</a>
+        <div class="cta__image">
+          <img
+            src="./assets/images/image-hero-mobile.png"
+            alt="Colorful mozaic background with a man standing working on a laptop. "
+            width="375px"
+          />
+        </div>
+        <section class="clients">
+          <img
+            src="./assets/images/client-databiz.svg"
+            alt="Databiz company logo"
+            width="81.25"
+            height="auto"
+          />
+          <img
+            src="./assets/images/client-audiophile.svg"
+            alt="Audiophile company logo"
+            width="81.25"
+            height="auto"
+          />
+          <img
+            src="./assets/images/client-meet.svg"
+            alt="Meet company logo"
+            width="81.25"
+            height="auto"
+          />
+
+          <img
+            src="./assets/images/client-maker.svg"
+            alt="Maker Company logo"
+            width="81.25"
+            height="auto"
+          />
         </section>
-      </nav>
-    </header>
-    <main class="cta">
-      <h1 class="cta--primary">Make remote work</h1>
-      <p class="cta--subtitle">
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <a class="cta__link" href="#">Learn more</a>
-      <div class="cta__image">
-        <img
-          src="./assets/images/image-hero-mobile.png"
-          alt="Colorful mozaic background with a man standing working on a laptop. "
-        />
-      </div>
-      <section class="clients">
-        <img
-          src="./assets/images/client-databiz.svg"
-          alt="Databiz company logo"
-        />
-        <img
-          src="./assets/images/client-audiophile.svg"
-          alt="Audiophile company logo"
-        />
-        <img src="./assets/images/client-meet.svg" alt="Meet company logo" />
-        <img src="./assets/images/client-maker.svg" alt="Maker Company logo" />
-      </section>
-    </main>
-    <script src="index.js"></script>
+      </main>
+      <script src="index.js"></script>
+    </div>
   </body>
 </html>
