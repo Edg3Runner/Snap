@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   /* Typography */
 
@@ -26,30 +28,43 @@
 }
 
 @media (width < 1440px) {
+  /* RESET */
+
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
 
-  body {
-    font-size: var(--f-body-s);
-    box-sizing: border-box;
-  }
-
   h1,
   h2,
-  p {
+  p,
+  body {
     margin: 0;
   }
 
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  body {
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--f-body-s);
+    padding: 1rem;
+    height: 100vh;
+  }
+
   .wrapper {
-    padding: 0 8px;
+    /* padding: 0 8px; */
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
-    height: 100vh;
-    margin: 0 auto;
+    /* border: 1px solid red; */
+    width: 375px;
   }
 
   .header {
@@ -57,34 +72,37 @@
     justify-content: space-between;
     padding: 1rem;
   }
-
+  /* 
   .auth {
     display: flex;
-  }
+  } */
 
   .cta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 24px 16px; */
+    margin-top: 1rem;
+    padding: 0 16px;
   }
 
   .cta--primary {
     text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    /* line-height: 42px; */
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
     letter-spacing: -0.5px;
     color: var(--c-black);
     order: 1;
-    /* padding: 0 8px; */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
   .cta--secondary {
     font-size: 16px;
-    font-weight: medium;
+    font-weight: 500;
     line-height: 26px;
     letter-spacing: 0;
+    text-align: center;
     color: var(--c-medium-grey);
     order: 2;
   }
@@ -98,7 +116,11 @@
   }
 
   .cta__link {
-    display: block;
+    margin-top: 24px;
+  }
+
+  .cta__link a {
+    text-decoration: none;
     padding: 12px 17px;
     border-radius: 15px;
     color: var(--c-almost-white);
@@ -107,11 +129,19 @@
     font-weight: bold;
     line-height: 26px;
     letter-spacing: -0.22px;
-    text-decoration: none;
     text-align: center;
   }
 
   .clients {
+    display: flex;
     order: 4;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  .clients img {
+    display: inline-block;
+    width: 18%;
   }
 }
