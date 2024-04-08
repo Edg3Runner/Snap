@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Typography */
+
+  --c-black: #151515;
+  --c-light-grey: #adadad;
+  --c-medium-grey: #686868;
+  --c-almost-white: #fafafa;
+
+  --f-heading-l: 80px;
+  --f-heading-s: 36px;
+  --f-body-s: clamp(
+    0.875rem,
+    0.8309859154929577rem + 0.18779342723004694vw,
+    1rem
+  );
+  --f-body-m: clamp(
+    1.125rem,
+    0.9049295774647887rem + 0.9389671361502347vw,
+    1.75rem
+  );
+  --f-button: clamp(
+    1.125rem,
+    0.9049295774647887rem + 0.9389671361502347vw,
+    1.75rem
+  );
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav__list {
+  width: 100%;
+
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.auth {
+  margin-left: auto;
+  display: flex;
+}
+
+.nav__list li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.nav__list a {
+  font-size: var(--f-body-s);
+  text-decoration: none;
+  color: var(--c-black);
+}
+
+.cta__image img {
+  margin: 0 auto;
+}
+
+.cta__content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.cta--primary {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+  color: var(--c-black);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta__content a {
+  display: inline-block;
+  padding: 1.25rem 4.25rem;
+  text-decoration: none;
+  color: var(--c-almost-white);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: -0.22px;
+  border-radius: 0.9375rem;
+  background-color: var(--c-black);
+  margin: 48px auto 0 auto;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 48px;
+}
+
+.clients div {
+  padding: 0rem 1rem 0 1rem;
+}
+
+/* This changes the layout for screens wider than 48em */
+@media (min-width: 69.375rem) {
+  .wrapper {
+    padding: 40px 24px 0px 24px;
+  }
+
+  .header__logo {
+    margin-right: 62px;
+  }
+
+  .nav__list li {
+    padding: 0;
+    margin-right: 40px;
+  }
+
+  .auth {
+  }
+
+  .auth .button {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cta__content {
+    padding: 0rem;
+    width: 50%;
+    margin-left: 137px;
+    margin-right: 125px;
+    margin-top: 120px;
+    text-align: left;
+  }
+
+  .cta__content a {
+    padding: 0.87rem 2.125rem;
+    line-height: 28px;
+    font-weight: 800;
+    margin-left: 2.5rem;
+  }
+
+  .cta__image {
+    order: 1;
+    width: 50%;
+    margin-right: 130px;
+    margin-top: 48px;
+  }
+
+  .cta--primary {
+    font-size: var(--f-heading-l);
+    text-align: left;
+    line-height: 80px;
+    letter-spacing: -1.11px;
+    font-weight: 800;
+    padding: 0 2rem;
+  }
+
+  .cta--secondary {
+    margin-top: 48px;
+    text-align: left;
+    font-size: 18px;
+    color: var(--c-medium-grey);
+    line-height: 28px;
+    padding: 0 2.5rem;
+  }
+
+  .cta__link {
+    margin-top: 51px;
+    margin-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .clients {
+    margin-top: 108px;
+  }
+  .clients div {
+    display: flex;
+    justify-content: center; /* Optional: horizontally center the image */
+    align-items: flex-end; /* Align items to the bottom */
+  }
+}

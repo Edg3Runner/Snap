@@ -9,71 +9,89 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.css" />
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header__logo">
-          <img
-            src="./assets/images/logo.svg"
-            alt="Snap"
-            height="26.58"
-            width="83.5"
-          />
+          <a href="/">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Snap"
+              height="26.58"
+              width="83.5"
+          /></a>
         </div>
         <nav class="header nav">
-          <!-- <ul nav__list>
+          <ul class="nav__list">
             <li class="nav__item"><a href="#">Feature</a></li>
             <li class="nav__item"><a href="#">Company</a></li>
             <li class="nav__item"><a href="#">Careers</a></li>
             <li class="nav__item"><a href="#">About</a></li>
-          </ul> -->
-          <!-- <section class="auth">
-            <form class="auth__form--login">
-              <button class="button">Login</button>
-            </form>
-            <form class="auth__form--register">
-              <button class="button">Register</button>
-            </form>
-          </section> -->
+            <div class="auth">
+              <li class="nav__item login"><a href="#">Login</a></li>
+              <li class="nav__item"><a href="#">Register</a></li>
+            </div>
+          </ul>
         </nav>
       </header>
-      <div class="cta__image">
-        <img
-          src="./assets/images/image-hero-mobile.png"
-          alt="Colorful mozaic background with a man standing working on a laptop. "
-          width="375"
-        />
-      </div>
+
       <main class="cta">
-        <h1 class="cta--primary">Make remote work</h1>
-        <p class="cta--secondary">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <div class="cta__link">
+        <picture class="cta__image">
+          <source
+            media="(min-width: 69.375rem)"
+            srcset="./assets/images/image-hero-desktop.png"
+            width="480"
+            height="640"
+          />
+          <img
+            class="feature__image"
+            src="./assets/images/image-hero-mobile.png"
+            alt="colored blocks looking together like a cpu"
+            width="343"
+            height="300"
+          />
+        </picture>
+        <div class="cta__content">
+          <h1 class="cta--primary">Make remote work</h1>
+          <p class="cta--secondary">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <!-- <div class="cta__link"> -->
           <a href="#">Learn more</a>
+          <!-- </div> -->
+          <section class="clients">
+            <div>
+              <img
+                src="./assets/images/client-databiz.svg"
+                alt="Databiz company logo"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/client-audiophile.svg"
+                alt="Audiophile company logo"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/client-meet.svg"
+                alt="Meet company logo"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/images/client-maker.svg"
+                alt="Maker Company logo"
+              />
+            </div>
+          </section>
         </div>
-
-        <section class="clients">
-          <img
-            src="./assets/images/client-databiz.svg"
-            alt="Databiz company logo"
-          />
-          <img
-            src="./assets/images/client-audiophile.svg"
-            alt="Audiophile company logo"
-          />
-          <img src="./assets/images/client-meet.svg" alt="Meet company logo" />
-
-          <img
-            src="./assets/images/client-maker.svg"
-            alt="Maker Company logo"
-          />
-        </section>
       </main>
+
       <script src="index.js"></script>
     </div>
   </body>
