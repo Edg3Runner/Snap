@@ -14,95 +14,108 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <a class="logo" href="#"
-          ><img src="./assets/images/logo.svg" alt=""
-        /></a>
-        <div class="nav__menu--open">
-          <img src="./assets/images/icon-menu.svg" alt="" />
-        </div>
-        <nav class="nav">
-          <div>
-            <img
-              class="nav__menu--close"
-              src="./assets/images/icon-close-menu.svg"
-              alt=""
-            />
+      <div class="container">
+        <header>
+          <a class="logo" href="#"
+            ><img src="./assets/images/logo.svg" alt=""
+          /></a>
+          <div class="nav__menu--open">
+            <img src="./assets/images/icon-menu.svg" alt="" />
           </div>
-          <ul class="nav__list">
-            <li>
-              <a class="features" href="#">
-                Features
-                <img src="./assets/images/icon-arrow-down.svg" alt="" />
-              </a>
-              <ul class="dropdown" id="features--list">
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/icon-todo.svg" alt="" />
-                    Todo List
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/icon-calendar.svg" alt="" />
-                    Calendar
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/icon-reminders.svg" alt="" />
-                    Reminders
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/images/icon-planning.svg" alt="" />
-                    Planning
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="company" href="#">
-                Company
-                <img src="./assets/images/icon-arrow-down.svg" alt="" />
-              </a>
-              <ul class="dropdown" id="company--list">
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-          <div class="authentication">
-            <a class="login" href="#">Login</a>
-            <a class="register" href="#">Register</a>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <section class="left-col">
-          <h1 class="cta--title">Make remote work</h1>
-          <p class="cta--content">
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </p>
-          <div class="cta__btn">
-            <a href="#" class="cta__btn--link">Learn more</a>
-          </div>
-          <div class="cta__sponsors">
-            <img src="./assets/images/client-databiz.svg" alt="" />
-            <img src="./assets/images/client-audiophile.svg" alt="" />
-            <img src="./assets/images/client-meet.svg" alt="" />
-            <img src="./assets/images/client-maker.svg" alt="" />
-          </div>
-        </section>
-        <section class="right-col">
-          <img src="./assets/images/image-hero-mobile.png" alt="" />
-        </section>
-      </main>
+          <nav class="nav">
+            <div>
+              <img
+                class="nav__menu--close"
+                src="./assets/images/icon-close-menu.svg"
+                alt=""
+              />
+            </div>
+            <ul class="nav__list">
+              <li>
+                <a class="features" href="#">
+                  Features
+                  <img src="./assets/images/icon-arrow-down.svg" alt="" />
+                </a>
+                <ul class="dropdown" id="features--list">
+                  <li>
+                    <a href="#">
+                      <img src="./assets/images/icon-todo.svg" alt="" />
+                      Todo List
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/images/icon-calendar.svg" alt="" />
+                      Calendar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/images/icon-reminders.svg" alt="" />
+                      Reminders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/images/icon-planning.svg" alt="" />
+                      Planning
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="company" href="#">
+                  Company
+                  <img src="./assets/images/icon-arrow-down.svg" alt="" />
+                </a>
+                <ul class="dropdown" id="company--list">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+            <div class="authentication">
+              <a class="login" href="#">Login</a>
+              <a class="register" href="#">Register</a>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <section class="left-col">
+            <h1 class="cta--title">Make remote work</h1>
+            <p class="cta--content">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <div class="cta__btn">
+              <a href="#" class="cta__btn--link">Learn more</a>
+            </div>
+            <div class="cta__sponsors">
+              <img src="./assets/images/client-databiz.svg" alt="" />
+              <img src="./assets/images/client-audiophile.svg" alt="" />
+              <img src="./assets/images/client-meet.svg" alt="" />
+              <img src="./assets/images/client-maker.svg" alt="" />
+            </div>
+          </section>
+          <section class="right-col">
+            <picture>
+              <source
+                media="(min-width: 1000px)"
+                srcset="./assets/images/image-hero-desktop.png"
+                type="image/png"
+              />
+              <img
+                src="./assets/images/image-hero-mobile.png"
+                alt="The Oslo Opera House"
+              />
+            </picture>
+            <!-- <img src="./assets/images/image-hero-mobile.png" alt="" /> -->
+          </section>
+        </main>
+      </div>
 
       <script src="index.js"></script>
     </div>
