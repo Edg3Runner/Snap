@@ -206,3 +206,60 @@ main {
 .cta__sponsors img {
   width: 20%;
 }
+
+@media (min-width: 1000px) {
+  header {
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 4rem;
+    height: 42px;
+  }
+
+  .logo img {
+    display: block; /* Make the logo a block element */
+    max-height: 100%; /* Make sure the image doesn't overflow its container */
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: unset;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav__list li {
+    margin-bottom: 0;
+  }
+
+  .nav__menu--close,
+  .nav__menu--open {
+    display: none;
+  }
+
+  .authentication {
+    flex-direction: row;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .login {
+    padding: 0.8125rem 0;
+    align-self: center;
+  }
+
+  .register {
+    padding: 0.7rem 1rem;
+    align-self: center;
+  }
+}
