@@ -9,87 +9,108 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__logo">
-          <a href="/">
-            <img
-              src="./assets/images/logo.svg"
-              alt="Snap"
-              height="26.58"
-              width="83.5"
-          /></a>
+      <header>
+        <div class="logo"><img src="./assets/images/logo.svg" alt="" /></div>
+        <div class="nav__menu--open">
+          <img src="./assets/images/icon-menu.svg" alt="" />
         </div>
-        <nav class="header nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#">Feature</a></li>
-            <li class="nav__item"><a href="#">Company</a></li>
-            <li class="nav__item"><a href="#">Careers</a></li>
-            <li class="nav__item"><a href="#">About</a></li>
-            <div class="auth">
-              <li class="nav__item login"><a href="#">Login</a></li>
-              <li class="nav__item"><a href="#">Register</a></li>
-            </div>
+        <nav class="nav">
+          <div>
+            <img
+              class="nav__menu--close"
+              src="./assets/images/icon-close-menu.svg"
+              alt=""
+            />
+          </div>
+          <ul>
+            <li>
+              <a href="#"
+                ><p class="features">
+                  Features
+                  <img src="./assets/images/icon-arrow-down.svg" alt="" /></p
+              ></a>
+              <ul class="dropdown" id="features--list">
+                <li>
+                  <a href="#"
+                    ><p>
+                      <img src="./assets/images/icon-todo.svg" alt="" />
+                      Todo List
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><p>
+                      <img src="./assets/images/icon-calendar.svg" alt="" />
+                      Calendar
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><p>
+                      <img src="./assets/images/icon-reminders.svg" alt="" />
+                      Reminders
+                    </p></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><p>
+                      <img src="./assets/images/icon-planning.svg" alt="" />
+                      Planning
+                    </p></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><p class="company">
+                  Company
+                  <img src="./assets/images/icon-arrow-down.svg" alt="" />
+                </p>
+              </a>
+              <ul class="dropdown" id="company--list">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
           </ul>
+          <div class="authentication">
+            <a class="login" href="#">Login</a>
+            <a class="register" href="#">Register</a>
+          </div>
         </nav>
       </header>
-
-      <main class="cta">
-        <picture class="cta__image">
-          <source
-            media="(min-width: 69.375rem)"
-            srcset="./assets/images/image-hero-desktop.png"
-            width="480"
-            height="640"
-          />
-          <img
-            class="feature__image"
-            src="./assets/images/image-hero-mobile.png"
-            alt="colored blocks looking together like a cpu"
-            width="343"
-            height="300"
-          />
-        </picture>
-        <div class="cta__content">
-          <h1 class="cta--primary">Make remote work</h1>
-          <p class="cta--secondary">
+      <main>
+        <section class="left-col">
+          <h1 class="cta--title">Make remote work</h1>
+          <p class="cta--content">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <!-- <div class="cta__link"> -->
-          <a href="#">Learn more</a>
-          <!-- </div> -->
-          <section class="clients">
-            <div>
-              <img
-                src="./assets/images/client-databiz.svg"
-                alt="Databiz company logo"
-              />
-            </div>
-            <div>
-              <img
-                src="./assets/images/client-audiophile.svg"
-                alt="Audiophile company logo"
-              />
-            </div>
-            <div>
-              <img
-                src="./assets/images/client-meet.svg"
-                alt="Meet company logo"
-              />
-            </div>
-            <div>
-              <img
-                src="./assets/images/client-maker.svg"
-                alt="Maker Company logo"
-              />
-            </div>
-          </section>
-        </div>
+          <div class="cta__btn">
+            <a href="#" class="cta__btn--link">Learn more</a>
+          </div>
+          <div class="cta__sponsors">
+            <img src="./assets/images/client-databiz.svg" alt="" />
+            <img src="./assets/images/client-audiophile.svg" alt="" />
+            <img src="./assets/images/client-meet.svg" alt="" />
+            <img src="./assets/images/client-maker.svg" alt="" />
+          </div>
+        </section>
+        <section class="right-col">
+          <img src="./assets/images/image-hero-mobile.png" alt="" />
+        </section>
       </main>
 
       <script src="index.js"></script>
